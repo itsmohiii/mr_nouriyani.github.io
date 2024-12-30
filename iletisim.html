@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(120deg, #4a90e2, #56ccf2);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover,
+        nav .active {
+            background: white;
+            color: #4a90e2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #4a90e2;
+            color: white;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            font-size: 1.1em;
+        }
+
+        th {
+            text-transform: uppercase;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #eef5ff;
+            transition: background 0.3s ease;
+        }
+
+        td {
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İletişim</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Bizimle İletişime Geçin</h2>
+            <p>Bizimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:mohaammadnry10@gmail.com">mohaammadnry10@gmail.com</a></li>
+                <li><strong>WhatsApp:</strong> <a href="https://wa.me/905421021380" target="_blank">+90 542 102 13 80</a></li>
+                <li><strong>Telegram:</strong> <a href="https://t.me/nouriyanii" target="_blank">@nouriyanii</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Öğrenci Bilgileri</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bilgi</th>
+                        <th>Detay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Öğrenci Numarası</td>
+                        <td>22360859258</td>
+                    </tr>
+                    <tr>
+                        <td>İsim</td>
+                        <td>Mohammadreza Nouriyani</td>
+                    </tr>
+                    <tr>
+                        <td>WhatsApp Telefon</td>
+                        <td>+90 542 102 13 80</td>
+                    </tr>
+                    <tr>
+                        <td>Telegram ID</td>
+                        <td>@nouriyanii</td>
+                    </tr>
+                    <tr>
+                        <td>Email Adresi</td>
+                        <td><a href="mailto:Mohaammadnry10@gmail.com">Mohaammadnry10@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>Okul</td>
+                        <td><a href="https://www.btu.edu.tr/" target="_blank">BURSA TEKNIK UNIVERSITY</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Designed by Mohammadreza Nouriyani</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammadreza'nın Proje Web Sitesi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        /* Updated Header Style */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            border-bottom: 5px solid #2193b0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        header p {
+            font-size: 1.8em;
+            font-weight: 300;
+            margin-top: 20px;
+            line-height: 1.5;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        nav {
+        background: linear-gradient(90deg, #4a90e2, #2193b0);
+        padding: 15px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+       }
+        nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+        nav li {
+        margin: 0 15px;
+        position: relative;
+       }
+       nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        font-weight: 500;
+        border-radius: 25px;
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+       }
+       nav a:hover,
+       nav .active {
+        background: white;
+        color: #4a90e2;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+       }
+
+        /* Add a smooth underline effect */
+        nav a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width 0.3s ease;
+        margin: auto;
+       }
+       nav a:hover::after {
+        width: 80%;
+       }
+        
+        /* Main Content Styling */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: white;
+            margin: 30px auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        main img {
+            margin: 20px 0;
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        main img:hover {
+            transform: scale(1.05);
+        }
+        main p {
+            font-size: 1.2em;
+            margin: 10px auto;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        
+        /* Footer Styling */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-size: 1.1em;
+        }
+        footer .social-icons {
+            margin-top: 15px;
+            text-align: center;
+        }
+        footer .social-icons a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            font-size: 1.5em;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        footer .social-icons a:hover {
+            transform: scale(1.2);
+            color: #4a90e2;
+        }
+        footer .social-icons img {
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+            transition: transform 0.3s ease;
+        }
+        footer .social-icons img:hover {
+            transform: scale(1.3);
+        }
+        footer p {
+            margin-top: 10px;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav li {
+                margin: 10px 0;
+            }
+            footer .social-icons a {
+                font-size: 1.3em;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mohammadreza'nın Dünyasına Hoş Geldiniz!</h1>
+        <p>BM Projesi için hazırlanan test web sitesine göz atın ve keşfedin.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <img src="rostam.png" alt="Rüstem'in Gücü" width="300" class="main-image">
+        <p>Bu web sitesi, BM projemizi hayata geçirmek için bir platform olarak tasarlandı. Sitemizde dolaşın, projelerimiz ve hizmetlerimiz hakkında daha fazla bilgi edinin.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://t.me/nouriyanii" target="_blank">
+                <img src="telegram.png" alt="Telegram"> Telegram
+            </a>
+            <a href="mailto:mohaammadnry10@gmail.com">
+                <img src="gmail.png" alt="Gmail"> Gmail
+            </a>
+            <a href="https://wa.me/905421021380" target="_blank">
+                <img src="whatsapp.jpg" alt="WhatsApp"> WhatsApp
+            </a>
+        </div>
+        <p>Üniversite: Bursa Teknik Üniversitesi <br> Profesör: Turgay Bilgin</p>
+        <p>&copy; Designed by Mohammadreza Nouriyani</p>
+    </footer>
+
+</body>
+</html>
